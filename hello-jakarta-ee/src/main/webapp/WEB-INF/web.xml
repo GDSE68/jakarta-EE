@@ -7,6 +7,10 @@
     <servlet>
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>lk.ijse.gdse68.api.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>city</param-name>
+            <param-value>Galle</param-value>
+        </init-param>
     </servlet>
 
     <servlet-mapping>
@@ -17,12 +21,21 @@
     <servlet>
         <servlet-name>MyServlet</servlet-name>
         <servlet-class>lk.ijse.gdse68.api.MyServlet</servlet-class>
+        <init-param>
+            <param-name>city</param-name>
+            <param-value>Panadura</param-value>
+        </init-param>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>MyServlet</servlet-name>
         <url-pattern>/test2</url-pattern>
     </servlet-mapping>
+
+    <context-param>
+        <param-name>country</param-name>
+        <param-value>Sri Lanka</param-value>
+    </context-param>
 
 </web-app>
 
